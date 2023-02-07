@@ -26,7 +26,7 @@ jobs:
   build:
     timeout-minutes: 5
     runs-on: ubuntu-latest
-    needs: [lint, get-version]
+    needs: [lint]
     steps:
     - name: Checkout the code
       uses: actions/checkout@v3
